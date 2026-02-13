@@ -39,7 +39,7 @@ Et enkelt system for å administrere elever, bygget med PHP og MySQL.
 - `create.php` - Legg til nye elever
 - `update.php` - Rediger elever
 - `db.php` - Database-tilkobling
-- `style.css` - Styling
+- `style.css` - Styling til index.php
 
 ## Database-innstillinger (db.php)
 
