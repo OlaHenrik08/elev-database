@@ -15,7 +15,7 @@ if (isset($_GET["id"])) {
     }
 }
 
-// Oppdater eleven når skjemaet sendes
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = $_POST["id"];
     $fornavn = $_POST["fornavn"];
@@ -62,11 +62,11 @@ if (isset($_GET["delete"])) {
         
         <table>
             <tr>
-                <th>ID</th>
-                <th>Fornavn</th>
-                <th>Etternavn</th>
-                <th>Klasse</th>
-                <th>Handlinger</th>
+                <th style='background-color:#1373EF; color:white;'>ID</th>
+                <th style='background-color:#1373EF; color:white;'>Fornavn</th>
+                <th style='background-color:#1373EF; color:white;'>Etternavn</th>
+                <th style='background-color:#1373EF; color:white;'>Klasse</th>
+                <th style='background-color:#1373EF; color:white;'>Handlinger</th>
             </tr>
             <?php
             
@@ -77,8 +77,7 @@ if (isset($_GET["delete"])) {
                     echo "<td>" . $row["etternavn"] . "</td>";
                     echo "<td>" . $row["klasse"] . "</td>";
                    echo "<td>
-                            <a class='add-btn' style='padding:8px 16px; font-size:13px; margin-right:6px;' 
-                            href='update.php?id=" . $row["id"] . "'>
+                            <a class='edit-btn' href='update.php?id=" . $row["id"] . "'>
                             Rediger
                             </a>
 
@@ -90,7 +89,7 @@ if (isset($_GET["delete"])) {
                     echo "</tr>";
                 }   
                     echo "<tr class='add-row'>"; 
-                        echo "<td colspan='5'><a class='add-btn' href='http://localhost/SkoleDB/create.php'>Legg til en elev</a></td>";
+                        echo "<td colspan='5'><a class='add-btn' href='create.php'>Legg til en elev</a></td>";
                     echo "</tr>";
 
 

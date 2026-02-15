@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         .back-link {
             display: inline-block;
-            color: #667eea;
+            color: #1373EF;
             text-decoration: none;
             font-size: 14px;
             margin-bottom: 20px;
@@ -88,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .back-link:hover {
-            color: #764ba2;
+            color: #1373EF;
             transform: translateX(-5px);
         }
 
@@ -127,12 +127,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         input[type="text"]:focus {
-            border-color: #667eea;
+            border-color: #1373EF;
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
 
         input[type="submit"] {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #1373EF;
             color: white;
             padding: 14px;
             border: none;
@@ -146,7 +146,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         input[type="submit"]:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 10px 20px rgba(19, 115, 239, 0.2);
         }
 
         input[type="submit"]:active {
