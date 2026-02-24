@@ -12,7 +12,7 @@ Et enkelt system for å administrere elever, bygget med PHP og MySQL.
 ## Installasjon
 
 1. **Flytt filene til server-mappen**
-   - XAMPP: `C:\xampp\htdocs\SkoleDB\`
+   - XAMPP: `C:\xampp\htdocs\`
 
 2. **Start Apache og MySQL**
 
@@ -36,8 +36,8 @@ Et enkelt system for å administrere elever, bygget med PHP og MySQL.
 ## Filer
 
 - `index.php` - Hovedside med elevliste
-- `create.php` - Legg til nye elever
-- `update.php` - Rediger elever
+- `create.php` - Legg til nye elever (Style inni php filen)
+- `update.php` - Rediger elever (Style inni php filen)
 - `db.php` - Database-tilkobling
 - `style.css` - Styling til index.php
 
