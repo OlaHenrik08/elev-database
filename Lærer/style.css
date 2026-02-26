@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #3c5057, #2c5364);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+nav {
+    background: white;
+    padding: 18px 40px;
+    border-radius: 20px;
+    margin: 30px auto 50px auto;
+    width: fit-content;
+    backdrop-filter: blur(10px);
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.2),
+        inset 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease;
+}
+
+nav:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.3),
+        inset 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding: 10px 18px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background: #2c5364;
+    transition: 0.3s ease;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+nav ul li a:hover::after {
+    width: 60%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #2c5364;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+}
+
+/* TABELL */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #2c5364;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-left: 2px solid white;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #eef3f7;
+    transition: 0.3s;
+}
+
+td:last-child {
+    text-align: center;
+}
+
+/* KNAPPER */
+
+.add-btn,
+.edit-btn,
+.delete-btn {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.add-btn {
+    background: #2c5364;
+    color: white;
+}
+
+.add-btn:hover {
+    background: #1e3c4a;
+    transform: translateY(-2px);
+}
+
+.edit-btn {
+    background: #3498db;
+    color: white;
+}
+
+.edit-btn:hover {
+    background: #2c80b4;
+    transform: translateY(-2px);
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* SKJEMA */
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #2c5364;
+    box-shadow: 0 0 5px rgba(44, 83, 100, 0.4);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/* LEGG TIL RAD */
+
+.add-row td {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.add-row:hover {
+    background: #f0f4f8;
+}

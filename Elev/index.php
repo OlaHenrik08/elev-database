@@ -54,11 +54,19 @@ if (isset($_GET["delete"])) {
     <title>Skole Database</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="http://localhost/elev-database/Elev/index.php">Elev tabell</a></li>
+            <li><a href="http://localhost/elev-database/L%C3%A6rer/index.php">Lærer tabell</a></li>
+        </ul>
+    </nav>
+</header>
 <body>
     <section class="container">
         <section class="emoji"><!--Gidder ikke å legge til en emoji mitt forslag: 🍌--></section>
         <h1>Skole Database</h1>
-        <h2>Liste over elever</h2>
+        <h2>Liste over alle elever</h2>
         
         <table>
             <tr>
